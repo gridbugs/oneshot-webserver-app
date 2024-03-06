@@ -1,0 +1,3 @@
+(executable
+ (name oneshot_webserver_app)
+ (libraries oneshot_webserver))

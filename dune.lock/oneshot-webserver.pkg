@@ -1,0 +1,15 @@
+(version 0.1)
+
+(install
+ (run %{make} install))
+
+(build
+ (run %{make}))
+
+(depends ocamlfind)
+
+(source
+ (fetch
+  (url file://./oneshot-webserver)))
+
+(dev)

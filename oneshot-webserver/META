@@ -1,0 +1,5 @@
+description = "Library for launching oneshot webservers"
+requires = "unix"
+version = "0.1"
+archive(native) = "oneshot_webserver.cmxa"
+plugin(native) = "oneshot_webserver.cmxs"
