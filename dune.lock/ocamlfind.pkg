@@ -26,7 +26,8 @@
      (not %{pkg:ocaml:preinstalled})
      (>= %{pkg:ocaml:version} 4.02.0))
     -no-camlp4)
-   (when %{pkg:ocaml:preinstalled} -no-topfind))
+   (when %{pkg:ocaml:preinstalled} -no-topfind)
+   -with-relative-paths-at %{prefix})
   (run %{make} all)
   (when
    %{pkg:ocaml:native}
@@ -36,5 +37,4 @@
 
 (source
  (fetch
-  (url http://download.camlcity.org/download/findlib-1.9.6.tar.gz)
-  (checksum md5=96c6ee50a32cca9ca277321262dbec57)))
+  (url git+https://github.com/Leonidas-from-XIV/ocamlfind#relocatable-relative-path)))
