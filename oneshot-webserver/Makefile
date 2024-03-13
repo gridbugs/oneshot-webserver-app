@@ -21,10 +21,10 @@ oneshot_webserver.cmxs: oneshot_webserver.cmxa liboneshot_webserver.a
 	$(OCAMLOPT) -shared -o $@ -I . oneshot_webserver.cmxa -linkall
 
 install: META oneshot_webserver.a oneshot_webserver.cmi oneshot_webserver.cmx oneshot_webserver.cmxa oneshot_webserver.cmxs liboneshot_webserver.a
-	$(OCAMLFIND) install oneshot_webserver $^
+	$(OCAMLFIND) install oneshot-webserver $^
 
 uninstall:
-	$(OCAMLFIND) remove oneshot_webserver
+	$(OCAMLFIND) remove oneshot-webserver
 
 clean:
 	rm -f *.cmo *.cmi *.cmx *.cmxa *.cmxs *.o *.a
