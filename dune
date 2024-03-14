@@ -1,4 +1,4 @@
 (executable
  (public_name oneshot_webserver_app)
- (libraries oneshot-webserver))
+ (libraries oneshot_webserver))
 

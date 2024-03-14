@@ -1,10 +1,10 @@
 (lang dune 3.13)
 
 (pin
- (url "file://./oneshot-webserver")
+ (url "file://./oneshot_webserver")
  (package
-  (name oneshot-webserver)
+  (name oneshot_webserver)
   (version 0.1)))
 (package
  (name oneshot_webserver_app)
- (depends oneshot-webserver))
+ (depends oneshot_webserver))
