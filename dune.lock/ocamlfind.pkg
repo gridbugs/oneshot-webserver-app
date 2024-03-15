@@ -20,7 +20,6 @@
    %{man}
    -config
    %{lib}/findlib.conf
-   -no-custom
    (when
     (and_absorb_undefined_var
      (not %{pkg:ocaml:preinstalled})
